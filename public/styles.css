@@ -1,0 +1,17 @@
+.trips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trip {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.trip img {
+    max-width: 100%;
+    height: auto;
+}
