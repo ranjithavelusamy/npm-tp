@@ -49,7 +49,7 @@ router.get('/luxurytrips', (req, res) => {
     res.render('luxurytrips', { title: 'Luxury Trips', data: data.luxurytrips });
 });
 
-// ✅ Perfect trip details route
+
 router.get('/perfecttrip', (req, res) => {
    
     res.render('tripsDetail', { 

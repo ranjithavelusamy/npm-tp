@@ -4,7 +4,7 @@ const data = require('../data/data');
 
 // Main deals route
 router.get('/', (req, res) => {
-    res.render('Deals', { title: 'deals', data: data.Deals });
+    res.render('deals', { title: 'deals', data: data.Deals });
 });
 
 // mountainbiker route
