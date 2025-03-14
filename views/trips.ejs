@@ -1,7 +1,24 @@
-<%- include('partials/header', { title: title }) %>
+<!-- <%- include('partials/header', { title: title }) %>
 <h1>Trips</h1>
 <p><%= data.content %> Explore breathtaking destinations with our curated travel packages. Find the perfect trip for your next adventure.</p>
 <img src="/images/free-photo-of-skater-on-frozen-lake-against-mountain-backdrop.jpeg" alt="Trip Destinations">
 <a href="/trips/perfecttrip" class="button">Learn More</a>
 
-<%- include('partials/footer') %> 
+<%- include('partials/footer') %>  -->
+
+
+
+
+<%- include('partials/header', { title: title }) %>
+
+<h1><%= title %></h1>
+<p><%= data.content %> Explore breathtaking destinations with our curated travel packages. Find the perfect trip for your next adventure.</p>
+
+<img src="/images/pexels-photo-1796727sw.jpeg" alt="Trip Destinations">
+
+<a href="/trips/perfecttrip" class="button">Perfecttrip</a><br>
+<a href="/trips/mountainbiker" class="button">Mountainbiker</a><br>
+<a href="/trips/adventuretrips" class="button">Adventuretrips</a><br>
+<a href="/trips/luxurytrips" class="button">Luxurytrips</a><br>
+<%- include('partials/footer') %>
+

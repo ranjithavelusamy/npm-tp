@@ -39,16 +39,20 @@ router.get('/', (req, res) => {
     res.render('trips', { title: 'Trips', data: data.trips });
 });
 
-// Adventure trips route
 router.get('/adventuretrips', (req, res) => {
-    res.render('adventuretrips', { title: 'Adventure Trips', data: data.adventuretrips });
+    res.render('adventuretrips', { title: 'Adventure Trips', data: data.adventuretrips || [] });
+});
+router.get('/mountainbiker', (req, res) => {
+    res.render('mountainbiker', { title: 'mountainbiker', data: data.mountainbiker});
 });
 
-// Luxury trips route
+
 router.get('/luxurytrips', (req, res) => {
-    res.render('luxurytrips', { title: 'Luxury Trips', data: data.luxurytrips });
+    res.render('luxurytrips', { 
+        title: 'Luxury Trips', 
+        data: data.luxurytrips || { content: "Discover the world's most luxurious destinations." }
+    });
 });
-
 
 router.get('/perfecttrip', (req, res) => {
    

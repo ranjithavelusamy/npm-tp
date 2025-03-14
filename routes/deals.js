@@ -7,10 +7,6 @@ router.get('/', (req, res) => {
     res.render('deals', { title: 'deals', data: data.Deals });
 });
 
-// mountainbiker route
-router.get('/mountainbiker', (req, res) => {
-    res.render('mountainbiker', { title: 'mountainbiker', data: data.mountainbiker});
-});
 
 // perfectdeals route
 router.get('/perfectdeal', (req, res) => {
